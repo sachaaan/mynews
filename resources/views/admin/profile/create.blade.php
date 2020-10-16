@@ -8,17 +8,17 @@
         <title>profile create</title>
     </head>
     <body>
-        <h1>プロフィール作成</h1>
+        <h1>プロフィール作成画面</h1>
     </body>
     
-{{-- layouts/admin.blade.phpを読み込む --}}
-@extends('layouts.admin')
+{{-- layouts/admin.profile.phpを読み込む --}}
+@extends('layouts.profile')
 
 
-{{-- admin.blade.phpの@yield('title')に'ニュースの新規作成'を埋め込む --}}
+{{-- admin.profile.phpの@yield('title')に'ニュースの新規作成'を埋め込む --}}
 @section('title','ニュースの新規作成')
 
-{{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
+{{-- admin.profile.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
     <div class="conteiner">
         <div class="row">

@@ -27,7 +27,7 @@ class NewsController extends Controller
             $path = $request->file('image')->store('public/image');
             $news->_path = basename($path);
         } else {
-            $news->image_path - null;
+            $news->image_path = null;
         }
         
               // フォームから送信されてきた_tokenを削除する

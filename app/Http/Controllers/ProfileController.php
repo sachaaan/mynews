@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\HTML;
 
 use App\News;
 
-class NewsController extends Controller
+class ProfileController extends Controller
 {
     public function index(Request $request)
     {
-        $posts = News::all()->sortByDesc('update_at');
+        $posts = News::all()->sortByDesc('updated_at');
         
         if (count($posts) > 0) {
             $headline = $posts->shift();
@@ -20,6 +20,7 @@ class NewsController extends Controller
             $headline = null;
         }
         
-        return view('news.index', ['headline' => $headline, 'posts' => $posts]);
+        
+        return view('profile.index',['headline' =>$headline,'posts' => $posts]);
     }
 }

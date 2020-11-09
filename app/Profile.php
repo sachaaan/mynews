@@ -13,4 +13,7 @@ class profile extends Model
         'hobby' => 'required',
         'introduction' => 'required',
     );
+    protected $fillable = [
+        'name', 'gender', 'hobby','introduction',
+    ];
 }

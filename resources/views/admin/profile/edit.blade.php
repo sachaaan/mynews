@@ -1,4 +1,4 @@
-@extend('layouts.admin')
+@extends('layouts.admin')
 @section('title','プロフィールの編集')
 
 @section('content')
@@ -46,7 +46,6 @@
                             @if ($profile_form->profilehistories !=NULL)
                                 @foreach ($profile_form->profilehistories as $profilehistory)
                                     <li class="list-group-item">{{ $profilehistory->edited_at }}</li>
-                                    
                                 @endforeach
                             @endif
                         </ul>

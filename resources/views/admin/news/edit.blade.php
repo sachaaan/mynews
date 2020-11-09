@@ -1,4 +1,4 @@
-@extend('layouts.admin')
+@extends('layouts.admin')
 @section('title','ニュースの編集')
 
 @section('content')
@@ -56,7 +56,6 @@
                             @if ($news_form->histories !=NULL)
                                 @foreach ($news_form->histories as $history)
                                     <li class="list-group-item">{{ $history->edited_at }}</li>
-                                    
                                 @endforeach
                             @endif
                         </ul>

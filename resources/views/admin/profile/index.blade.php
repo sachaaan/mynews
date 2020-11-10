@@ -40,7 +40,6 @@
                         <tbody>
                             @foreach($posts as $profile)
                                 <tr>
-                                    <th>{{ $profile->id }}</th>
                                     <td>{{ $profile->name }}</td>
                                     <td>{{ $profile->gender }}</td>
                                     <td>{{ $profile->hobby }}</td>
@@ -50,7 +49,7 @@
                                             <a href="{{ action('Admin\ProfileController@edit', ['id' => $profile->id]) }}">編集</a>
                                         </div>
                                         <div>
-                                            <a href="{{ action('Admin\NewsController@delete', ['id' => $news->id]) }}">削除</a>
+                                            <a href="{{ action('Admin\ProfileController@delete', ['id' => $profile->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>

@@ -12,4 +12,10 @@ class History extends Model
         'news_id' => 'required',
         'edited_at' => 'required',
     );
+    
+    public function histories()
+    {
+    return $this->hasMany('App\History');
+
+    }
 }

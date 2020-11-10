@@ -12,8 +12,8 @@ class ProfileHistory extends Model
         'title' => 'reauired',
         'body' =>'required',
     );
-public function profilehistories()
-{
-    return $this->hasMany('App\ProfileHistory');
-}
+    public function profilehistories()
+    {
+    return $this->hasMany('App\History');
+    }
 }

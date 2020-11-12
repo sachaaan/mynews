@@ -9,37 +9,36 @@
                 <form action="{{ action('Admin\ProfileController@update') }}" method="post" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                         <ul>
-                            @foreach($errors->aal() as $e)
+                            @foreach($errors->all() as $e)
                                 <li>{{ $e }}</li>
                             @endforeach
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2" for="title">氏名</label>
+                        <label class="col-md-2" for="name">氏名</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="name" value="{{ $profile_form->title }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="title">性別</label>
+                        <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="gender" value="{{ $profile_form->title }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="title">趣味</label>
+                        <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" class="form-control" row="20" name="hobby" value="{{ $profile_form->title }}">
+                            <textarea class="form-control" row="20" name="hobby" value="{{ $profile_form->title }}">
                             </textarea>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="title">自己紹介欄</label>
+                        <label class="col-md-2" for="introduction">自己紹介欄</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" class="form-control" row="50" name="introduction" value="{{ $profile_form->title }}">
+                            <textarea class="form-control" row="50" name="introduction" value="{{ $profile_form->title }}">
                             </textarea>    
                         </div>
-                        <div class="form-group row">
                         <div class="col-md-10">
                             <input type="hidden" name="id" value="{{ $profile_form->id }}">
                             {{ csrf_field() }}

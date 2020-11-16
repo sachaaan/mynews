@@ -17,27 +17,25 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="name">氏名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="name" value="{{ $profile_form->title }}">
+                            <input type="text" class="form-control" name="name" value="{{ $profile_form->name }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="gender" value="{{ $profile_form->title }}">
+                            <input type="text" class="form-control" name="gender" value="{{ $profile_form->gender }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" row="20" name="hobby" value="{{ $profile_form->title }}">
-                            </textarea>
+                            <textarea class="form-control" rows="15" name="hobby" >{{ $profile_form->hobby }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="introduction">自己紹介欄</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" row="50" name="introduction" value="{{ $profile_form->title }}">
-                            </textarea>    
+                            <textarea class="form-control" rows="20" name="introduction" >{{ $profile_form->introduction }}</textarea>
                         </div>
                         <div class="col-md-10">
                             <input type="hidden" name="id" value="{{ $profile_form->id }}">

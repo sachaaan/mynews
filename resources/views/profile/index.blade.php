@@ -10,12 +10,15 @@
                         <div class="col-md-6">
                             <div class="caption mx-auto">
                                 <div class="title p-2">
-                                    <h1>{{ str_limit($headline->title, 70) }}</h1>
+                                    <h1>{{ str_limit($headline->name, 70) }}</h1>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
+                            <p class="body mx-auto">{{ str_limit($headline->gender, 650) }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="body mx-auto">{{ str_limit($headline->introduction, 650) }}</p>
                         </div>
                     </div>
                 </div>
@@ -32,10 +35,10 @@
                                     {{ $post->updated_at->format('Y年m月d日') }}
                                 </div>
                                 <div class="title">
-                                    {{ str_limit($post->title, 150) }}
+                                    {{ str_limit($post->name, 150) }}
                                 </div>
                                 <div class="body mt-3">
-                                    {{ str_limit($post->body, 1500) }}
+                                    {{ str_limit($post->introduction, 1500) }}
                                 </div>
                             </div>
                         </div>

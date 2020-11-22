@@ -5,6 +5,7 @@
     <div class="container">
         <div class="row">
             <h2>プロフィール一覧</h2>
+            <p>登録されたプロフィール</p>
         </div>
         <div class="row">
             <div class="col-md-4">

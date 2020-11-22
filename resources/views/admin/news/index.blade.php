@@ -3,8 +3,8 @@
 
 @section('content')
     <div class="container">
+        <h2>ニュース一覧</h2>
         <div class="row">
-            <h2>ニュース一覧</h2>
             <p>新規ニュース閲覧</p>
         </div>
         <div class="row">

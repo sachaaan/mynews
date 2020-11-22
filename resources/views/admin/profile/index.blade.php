@@ -3,8 +3,8 @@
 
 @section('content')
     <div class="container">
+        <h2>プロフィール一覧</h2>
         <div class="row">
-            <h2>プロフィール一覧</h2>
             <p>登録されたプロフィール</p>
         </div>
         <div class="row">

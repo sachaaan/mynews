@@ -9,11 +9,7 @@ class ProfileHistory extends Model
     protected $guarded = array('id');
     //
     public static $rules = array(
-        'title' => 'reauired',
-        'body' =>'required',
+        'profile_id' => 'reauired',
+        'edited_at' =>'required',
     );
-    public function profilehistories()
-    {
-    return $this->hasMany('App\History');
-    }
 }
